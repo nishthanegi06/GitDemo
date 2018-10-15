@@ -1,0 +1,34 @@
+
+public class Test 
+{
+
+    public static void main(String[] args)
+    {
+        Test t = new Test();
+
+        System.out.println(t.toStrings());
+
+    }
+
+    public String toStrings()
+    {
+        return ((Test2) this).toStrings();
+    }
+
+}
+
+class Test1 extends Test
+{
+    public String toStrings()
+    {
+        return "hh";
+    }
+}
+
+class Test2
+{
+    public String toStrings()
+    {
+        return "hh1";
+    }
+}
